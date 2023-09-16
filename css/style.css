@@ -1,0 +1,69 @@
+.kanban-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.kanban-title {
+    margin-bottom: 20px;
+}
+
+.kanban-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.kanban-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+
+.kanban-card {
+    margin: 2% 2%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    cursor: grab;
+}
+
+.kanban-card.dragging {
+    opacity: 0.5;
+}
+
+.new-card-form {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    height: 50px;
+}
+
+.new-card-form input[type="text"] {
+    flex: 1;
+    margin-right: 5px;
+}
+.kanban-cards{
+    flex: 1;
+    overflow: auto;
+    min-height: 10em;
+}
+.delete-card-btn {
+    float: right;
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.delete-card-btn:hover {
+    color: #333;
+}
